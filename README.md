@@ -8,7 +8,7 @@ El proyecto Maestro de Rezagos es un sistema complejo que se ejecuta en un entor
 
 - **Modos de Ejecución**: El proyecto tiene tres modos de ejecución diferentes, dependiendo de los parámetros proporcionados al script. Estos modos permiten validar datos, cargar datos y generar un archivo consolidado.
 
-- **Calendario Laboral**: La ejecución del proyecto está programada para días laborables específicos. Esto se controla utilizando una tabla llamada "calendario" que se encuentra en la base de datos "previred_integracion". La ejecución fuera de los días hábiles adecuados no se llevará a cabo.
+- **Calendario Laboral**: La ejecución del proyecto está programada para días laborables específicos. Esto se controla utilizando una tabla llamada "calendario" que se encuentra en la base de datos. La ejecución fuera de los días hábiles adecuados no se llevará a cabo.
 
 - **Rendimiento y Duración**: Debido a la gran cantidad de datos que maneja el proyecto, la ejecución puede llevar bastante tiempo. La duración depende de la cantidad de datos y del rendimiento del servidor en el que se ejecute.
 
