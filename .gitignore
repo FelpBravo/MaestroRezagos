@@ -4,6 +4,7 @@ tools/CDCs
 enviroment.py
 config.py
 *.sql
+.DS_Store
 
 # C extensions
 *.so
