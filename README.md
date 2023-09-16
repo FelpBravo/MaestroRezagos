@@ -55,3 +55,8 @@ El proyecto está organizado en las siguientes carpetas:
 
 Antes de ejecutar el proyecto en entornos de prueba (QA) o producción, asegúrate de configurar correctamente las variables en el archivo `config.py`. Modifica las constantes según corresponda para cada entorno.
 
+## 
+**Nota Importante**: Los archivos sensibles no han sido subidos al repositorio o han sido ocultados por razones de seguridad.
+
+Estos archivos contienen información confidencial, como contraseñas o claves de acceso, y no deben estar disponibles públicamente en un repositorio de código abierto.
+
