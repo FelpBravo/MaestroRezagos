@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <body>
+        <div>
+            <p>Estimados,</p>
+            <p>
+                Se deposita en casilla SFTP archivo consolidado {{nombre_archivo_consolidado}} con registros en estado “Generado” correspondiente a 
+                fecha {{fecha_desde}} al {{fecha_hasta}}.
+            </p> 
+            
+            <p>Detalle registros por AFP:</p>
+            <div style="width: 500px; ">
+                <table style="border-collapse: collapse;">
+                    <tr>
+                        <th style="border: 1px solid rgba(42, 38, 38, 0.999); width: 100px;">AFP</th>
+                        <th style="border: 1px solid rgba(42, 38, 38, 0.999); text-align: left; width: 80px;">Glosa AFP</th>
+                        <th style="border: 1px solid rgba(42, 38, 38, 0.999); text-align: right; width: 90px;">N° Registros</th>
+                    </tr>
+                    {% for n in range(largo_tabla) %}
+                    <tr>
+                         <td style="text-align: center; border: 1px solid rgba(41, 37, 37, 0.849); width: 100px;">
+                            {{cods_afps[n]}}
+                        </td>
+                        <td style="text-align: left; border: 1px solid rgba(41, 37, 37, 0.849); width: 80px;">
+                            {{glosas_afps[n]}}
+                        </td>
+                        <td style="text-align: right; border: 1px solid rgba(41, 37, 37, 0.849); width: 90px;">
+                            {{cant_registros[n]}}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    <tr>
+                        <td></td>
+                        <th style="text-align: left; border: 1px solid rgba(42, 38, 38, 0.999);">Total</th>
+                        <td style="text-align: right; border: 1px solid rgba(41, 37, 37, 0.849);">
+                            {{cant_total}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                En caso de dudas, favor contactar al correo  <a href="#">grupoBEST@previred.com</a>.
+            </p>
+            <p>Saludos Cordiales</p>
+        </div>
+    </body>
+</html>

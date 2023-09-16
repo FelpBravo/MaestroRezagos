@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <head>
+        <style>
+            table {
+                padding-left: 30px;
+                text-align:left;
+            }
+            tr, th {
+                text-align:left;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Estimados,</p>
+            <p>Informamos que se ha ejecutado de manera exitosa el proceso de validación correspondiente al servicio 'Maestro Rezagos'
+                con el siguiente resultado:</p> 
+            
+            <table>
+                <tr>
+                    <th><strong>NOMBRE ARCHIVO</strong></th>
+                    <td>: {{nombre_archivo}}</td>  
+                </tr>
+                <tr>
+                    <th><strong>INSTITUCIÓN</strong></th>
+                    <td>: {{glosa}}</td>
+                </tr>
+                <tr>
+                    <th><strong>FECHA EJECUCIÓN</strong></th>
+                    <td>: {{date}}</td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <th><strong>CANTIDAD REGISTROS ENVIADOS</strong></th>
+                    <td style="text-align:start">:</td>
+                    <td style="text-align:right">{{cant_enviados}}</td>  
+                </tr>
+                <tr>
+                    <th><strong>CANTIDAD REGISTROS LEIDOS</strong></th>
+                    <td style="text-align:start">:</td>
+                    <td style="text-align:right">{{cant_leidos}}</td>  
+                </tr>
+                <tr>
+                    <th><strong>CANTIDAD REGISTROS VALIDOS</strong></th>
+                    <td style="text-align:start">:</td>
+                    <td style="text-align:right">{{cant_validos}}</td>  
+                </tr>
+                <tr>
+                    <th><strong>CANTIDAD REGISTROS RECHAZADOS</strong></th>
+                    <td style="text-align:start">:</td>
+                    <td style="text-align:right">{{cant_rechazados}}</td>  
+                </tr>
+            </table>
+            
+            {% if cant_rechazados == "0" %}
+                <p>Proceso de validación sin errores. Todos los registros se encuentran disponibles para ser cargados.</p>
+            {% else %}
+                <p>Proceso de validación con errores. Se deposita en casilla SFTP archivo “{{nombre_archivo_no_valido}}” para su revisión.</p>
+            {% endif %}
+
+            <p>En caso de dudas, por favor contactar al correo grupoBEST@previred.com</p>
+
+            <p>Saludos Cordiales.</p>
+        </div>
+    </body>
+</html>

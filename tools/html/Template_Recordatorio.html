@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+    <body>
+        <div>
+            <p>Estimados,</p>
+            <p>Informamos que el proceso CREZ actual para {{glosa}}, no ha sido posible procesar debido a lo siguiente:</p> 
+
+            <p>
+                <b>Descripción: </b> : {{msg}}
+            </p>
+            
+            {% if validar_ejecucion %}
+            <p>
+                Agradecemos no considerar esta notificación, si en el proceso de las 11:00 hrs. ustedes depositaron un archivo CREZ y este se validó correctamente.
+            </p>
+            {% endif %}
+
+            <p>
+                En caso de dudas, favor contactar al correo  <a href="#">grupoBEST@previred.com</a>.
+            </p>
+
+            <p>Saludos Cordiales</p>
+        </div>
+    </body>
+</html>
