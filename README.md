@@ -1,6 +1,6 @@
 # Proyecto Maestro de Rezagos
 
-El proyecto Maestro de Rezagos es un script Python diseñado para el sistema operativo Linux que se ejecuta automáticamente a través de un crontab. Este proyecto tiene como objetivo principal validar, cargar datos y generar un archivo consolidado. Está destinado a trabajar con tablas que contienen millones de registros y se basa en el uso de diversas tecnologías y herramientas, incluyendo Python, Pandas, Pysftp, SQLAlchemy y Bash.
+El proyecto Maestro de Rezagos es un script Python diseñado para el sistema operativo Linux que se ejecuta automáticamente a través de un crontab. Este proyecto tiene como objetivo principal validar, cargar datos y generar un archivo consolidado. Está destinado a trabajar con tablas que contienen millones de registros y se basa en el uso de diversas tecnologías y herramientas, incluyendo Python, Pandas, Pysftp, SQLAlchemy, servidor de correos y Bash.
 
 ## Descripción del Proyecto
 
